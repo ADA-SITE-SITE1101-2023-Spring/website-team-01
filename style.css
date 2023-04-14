@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.banner{
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    background-color: black;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    
+}
+.banner::before{
+    content: "";
+    width: 100%;
+    background-image: url("1.jpg");
+    height: 150vh;
+    background-position: right;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 20%;
+    background-size: cover;
+    
+}
+.navbar{
+    background-color: rgb(52, 36, 36);
+    position: relative;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    top: 3%;
+    padding: 10px 0px;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    cursor: pointer;
+    border-radius: 100%;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin:  0 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar ul li a:hover{
+    box-shadow: 0px 2px rgb(133, 10, 10);
+    color: black;
+    transition: 0.5s;
+}
+.content{
+    position:absolute;
+   text-align: center;
+    top: 33%;
+    color: aliceblue;   
+}
+.content h1{
+    text-align: center;
+    font-size: 65px;
+}
+.content p{
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 200px;
+}
+button{
+    width: 150px;
+    background-color: rgb(52, 36, 36);
+    color: aliceblue;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 35px;
+    font-weight: 700;
+}
+button:hover{
+    transition: 90ms;
+   transition: 0.7s;
+}
+p a:link {
+    color: pink;
+    text-decoration: none;
+  }
+p a:visited {
+    color: palevioletred;
+    text-decoration: none;
+  }
+  
+button a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+button a:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 2px rgb(133, 10, 10);
+    transition: 90ms;
+    transition: 0.7s;
+
+}
+.intro img{
+    height: 93px;
+    width: 105px;
+    margin: 10px 15px;
+    padding: 5px 15px;
+    background-color: rgb(52, 36, 36);
+    border-radius: 22%;
+    border-color: 5px rgb(0, 0, 0);
+    border: 1px solid;
+}
+
+.Javascript{
+    margin: 20px;
+}
+
+.JavascriptText{
+    font-size: 12px;
+}
+.buttonJavascript{
+    font-size: 24px;
+}
