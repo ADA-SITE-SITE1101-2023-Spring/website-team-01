@@ -129,7 +129,7 @@
     color: aliceblue;
     font-size: 16px;
     padding: 10px 200px;
-    margin: 10px;
+    margin: 75px;
     text-align: justify;
     text-indent: 10px;
   }
@@ -140,7 +140,7 @@
 .j3 img{
   float: left;
   border: 1px dotted black;
-  margin: 5px 5px 15px 20px !important;
+  margin: 0px 5px 15px 20px !important;
   object-fit: cover;
     object-position: center center;
 }
@@ -149,7 +149,7 @@
   color: aliceblue;
   font-size: 16px;
   padding: 10px 200px;
-  margin: 10px;
+  margin: 75px;
   text-align: justify;
   text-indent: 10px;
 }
@@ -170,7 +170,7 @@ object-fit: cover;
   color: aliceblue;
   font-size: 16px;
   padding: 10px 200px;
-  margin: 10px;
+  margin: 75px;
   text-align: justify;
   text-indent: 10px;
 }
@@ -191,7 +191,7 @@ object-fit: cover;
   color: aliceblue;
   font-size: 16px;
   padding: 10px 200px;
-  margin: 10px;
+  margin: 75px;
   text-align: justify;
   text-indent: 10px;
 }
@@ -248,6 +248,7 @@ margin: 0px 5px 15px 20px !important;
     text-align: center;
     padding: 10px 200px;
   }
+  problem error overlap
   */
   
   p a:link, h3 a:link {
@@ -298,6 +299,29 @@ margin: 0px 5px 15px 20px !important;
   
 }
 
+#music-button {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  width: 150px;
+    background-color: rgb(52, 36, 36);
+    color: aliceblue;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+audio::-webkit-media-controls {
+  display: none !important;
+}
+audio::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+audio::-webkit-media-controls-panel {
+  display: none !important;
+}
 
 
   
