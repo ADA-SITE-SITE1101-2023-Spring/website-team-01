@@ -2,67 +2,66 @@
     padding: 0;
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
 }
-.banner{
-    position: relative;
-    height: 150vh;
+
+body{
+    
+    height: 100%;
     width: 100%;
-    background-color: black;
-    background-position: center center;
     background-attachment: fixed;
-    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("media/1.jpg");
     
-}
-.banner::before{
-    content: "";
-    width: 100%;
-    background-image: url("1.jpg");
-    height: 150vh;
-    background-position: right;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    opacity: 20%;
-    background-size: cover;
-    
-}
+  }
+
 .navbar{
+    
+    opacity: 100% !important;
     background-color: rgb(52, 36, 36);
-    position: relative;
+    position: fixed;
     display: flex;
     width: 40%;
     margin: auto;
     top: 3%;
     padding: 10px 0px;
     border-radius: 35px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    left: 50%;
+   transform: translateX(-50%);
+   opacity: 1;
 }
 .logo{
+    opacity: 100% !important;
     cursor: pointer;
     border-radius: 100%;
 }
 .navbar ul li{
+    
+    opacity: 100% !important;
     list-style-type: none;
     display: inline-block;
     margin:  0 25px;
 }
 .navbar ul li a{
+    opacity: 100% !important;
     text-decoration: none;
     color: aliceblue;
 }
 .navbar ul li a:hover{
-    box-shadow: 0px 2px rgb(133, 10, 10);
-    color: black;
+    opacity: 100% !important;
+    box-shadow: 0px 2px rgb(94, 67, 67);
+    color: rgb(10, 140, 25);
     transition: 0.5s;
 }
 .content{
-    position:absolute;
-   text-align: center;
-    top: 33%;
+    margin-top: 200px;
+    position: static;
+    text-align: center;
     color: aliceblue;   
 }
 .content h1{
@@ -89,13 +88,18 @@ button:hover{
    transition: 0.7s;
 }
 p a:link {
-    color: pink;
+    color: rgb(10, 140, 25);
     text-decoration: none;
   }
 p a:visited {
-    color: palevioletred;
+    color: rgb(11, 84, 13);
     text-decoration: none;
   }
+p a:hover{
+    color: greenyellow;
+    transition: 90ms;
+   transition: 0.7s;
+}
   
 button a{
     text-decoration: none;
@@ -103,15 +107,18 @@ button a{
 
 }
 button a:hover{
-    color: rgb(0, 0, 0);
-    box-shadow: 0px 2px rgb(133, 10, 10);
+    color: rgb(10, 140, 25);
+    box-shadow: 0px 2px rgb(94, 67, 67);
     transition: 90ms;
     transition: 0.7s;
-
 }
+
+
 .intro img{
-    height: 93px;
-    width: 105px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center center;
     margin: 10px 15px;
     padding: 5px 15px;
     background-color: rgb(52, 36, 36);
@@ -121,12 +128,64 @@ button a:hover{
 }
 
 .Javascript{
-    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    top: 5%;
+    
 }
 
 .JavascriptText{
-    font-size: 12px;
+    font-size: 19px;
+    font-style: italic;
+    background-color:rgb(52, 36, 36);
+    border-color: 5px rgb(0, 0, 0);
+    border: 1px solid;
+    text-align: justify !important;
+    border-radius: 26px;
+    
+  
+}
+.buttonJavascript:hover{
+    color: rgb(10, 140, 25);
+    box-shadow: 0px 2px rgb(94, 67, 67);
+    transition: 90ms;
+    transition: 0.7s;
+
+}
+.javatext1{
+    text-align: center;
+    font-weight: bold;
 }
 .buttonJavascript{
+    text-align: center center;
     font-size: 24px;
+    width: 66px !important;   
 }
+
+.copy{
+        padding: 10px;
+        text-align:left;
+        font-size: 14px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: white;
+}
+
+
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(40%)
+    
+  }
+  
+  
