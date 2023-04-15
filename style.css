@@ -2,9 +2,15 @@
     padding: 0;
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    
 }
-
+/*@media (min-width: 921px) {
+    body {
+      width: 921px;
+      margin: 0 auto;
+    }
+  }
+  does not work idk
+*/
 body{
     
     height: 100%;
@@ -32,8 +38,8 @@ body{
     align-items: center;
     justify-content: center;
     left: 50%;
-   transform: translateX(-50%);
-   opacity: 1;
+    transform: translateX(-50%);
+    opacity: 1;
 }
 .logo{
     opacity: 100% !important;
@@ -159,7 +165,8 @@ button a:hover{
 .buttonJavascript{
     text-align: center center;
     font-size: 24px;
-    width: 66px !important;   
+    width: 60px !important;
+    height: 60px !important;  
 }
 
 .copy{
@@ -185,7 +192,23 @@ button a:hover{
     z-index: -1;
     background-size: cover;
     filter: brightness(40%)
-    
   }
-  
+
+#music-button {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+audio::-webkit-media-controls {
+    display: none !important;
+}
+audio::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+audio::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+
   
