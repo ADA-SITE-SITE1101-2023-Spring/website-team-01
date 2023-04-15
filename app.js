@@ -12,4 +12,28 @@ function decreasefont(){
     text.style.fontSize = fontsize + 'px';
 }
 
+var audio = document.getElementById("myAudio");
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+
+
+var audio = document.getElementById('myAudio');
+var musicButton = document.getElementById('music-button');
+        
+        musicButton.addEventListener('click', function() {
+          if (audio.paused) {
+            audio.play();
+            musicButton.innerHTML = 'Music: On';
+          } else {
+            audio.pause();
+            musicButton.innerHTML = 'Music: Off';
+          }
+        });
+        
 
