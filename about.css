@@ -3,6 +3,7 @@
   margin: 0;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
 body{
     
   height: 100%;
@@ -108,4 +109,28 @@ p a:hover{
   background-size: cover;
   filter: brightness(40%)
   
+}
+
+#music-button {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  width: 150px;
+    background-color: rgb(52, 36, 36);
+    color: aliceblue;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+audio::-webkit-media-controls {
+  display: none !important;
+}
+audio::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+audio::-webkit-media-controls-panel {
+  display: none !important;
 }
